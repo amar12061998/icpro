@@ -1,0 +1,117 @@
+/* src/css/ProcessSkids.css */
+.process-skids-hero-section {
+    background-image: url('/public/images/manufacturing/control.jpg'); /* Use appropriate background image */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro-heading-section {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+.intro-heading-section h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 1rem;
+    color: #333;
+}
+
+.services-section {
+    padding: 2rem 0;
+}
+
+.service-item {
+    margin-bottom: 2rem;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-section {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.fixed-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-icon {
+    font-size: 30px;
+    color: #25D366; /* WhatsApp color */
+    margin-bottom: 10px;
+}
+
+.scroll-to-top {
+    font-size: 30px;
+    color: #007bff;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+/* ProcessSkids.css */
+
+.image-description-section {
+    background-color: #f8f9fa; /* Light background for contrast */
+  }
+  
+  .large-image-container {
+    text-align: center; /* Centering the large image */
+  }
+  
+  .thumbnail {
+    border: 2px solid transparent; /* Default border */
+    transition: border 0.3s; /* Smooth transition for border */
+  }
+  
+  .thumbnail:hover {
+    border: 2px solid #007bff; /* Change border on hover */
+  }
+  .large-image-container img {
+    width: 100%; /* Adjust to fit container */
+    height: 500px;
+    transition: transform 0.3s; /* Smooth transition for scaling */
+  }

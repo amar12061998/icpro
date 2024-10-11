@@ -1,0 +1,172 @@
+.manufacturing-hero-section {
+    background-image: url('/public/images/ManufacturingBackground.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+   
+    
+  }
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+  
+  .intro-heading-section {
+    padding: 40px 20px; /* Standard padding */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+.intro-heading-section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #333333; 
+    text-align: center; 
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+  
+  .carousel-section {
+    padding: 2rem 0;
+    overflow-x: hidden;
+  }
+  
+  .carousel-item1 {
+    position: relative;
+    text-align: center; /* Center the caption */
+    overflow: visible; /* Ensure captions are visible */  
+  }
+  
+  .carousel-item1 img {
+    
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    
+  }
+
+  .carousel-caption {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 10px; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center the caption */
+    color: #fff; /* Change this as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    padding: 5px 10px; /* Add some padding */
+    border-radius: 5px; /* Optional: rounded corners */
+  }
+  /* src/css/Manufacturing.css */
+.offer-section {
+    padding: 2rem 0;
+}
+
+.offer-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.offer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.offer-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.offer-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Alternating layout for even rows */
+.offer-item:nth-child(even) .col-md-6:first-child {
+    order: 2;
+}
+
+.offer-item:nth-child(even) .col-md-6:last-child {
+    order: 1;
+}
+
+.innovation-section {
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text color */
+  }
+  
+  .innovation-section .paragraph {
+    font-size: 1.2rem; 
+    text-align: justify; 
+    line-height: 1.8; /* Provides adequate line spacing */
+    margin-bottom: 20px; /* Space between paragraphs */
+  }
+  .quality-standards {
+    background-color: #f9f9f9; /* Light background color */
+  }
+
+  .quality-standards-bg {
+    background: linear-gradient(135deg, #e2e2e2 0%, #ffffff 100%);
+  }
+  .quality-box {
+    background-color: #ffffff; /* White box background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: 100%; /* Ensures boxes have equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .quality-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .quality-box ul {
+    text-align: left;
+  }
+  
+  .quality-box ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .quality-box i {
+    color: #007bff; /* Icon color */
+    margin-right: 0.5rem;
+  }
+    
+  .certifications img {
+    width: 100%; /* Makes the image take the full width of the column */
+    height: 150px; /* Maintains the aspect ratio */
+    max-width: 500px; /* Sets a maximum width for the images */
+  }
+  
+    

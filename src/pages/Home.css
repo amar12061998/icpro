@@ -1,0 +1,481 @@
+/* src/pages/Home.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  /* Position the header above the carousel */
+  top: 0px;
+  width: 100%;
+  /* Full width */
+  z-index: 1;
+  /* Ensure it is above the carousel */
+  color: white;
+  /* Text color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  padding: 20px;
+  /* Add padding for aesthetics */
+}
+
+.header-content {
+  text-align: center;
+  /* Center the content */
+}
+
+.carousel-item {
+  height: 80vh;
+  /* Full height */
+}
+
+.carousel-item img {
+  object-fit: cover;
+  /* Cover the container while maintaining aspect ratio */
+  height: 100%;
+  /* Full height */
+  width: 100%;
+  /* Full width */
+}
+.intro-paragraph {
+  font-family: 'Lora', serif; /* Use the selected Google Font */
+  font-size: 18px; /* Increase font size */
+  line-height: 1.6; /* Improve readability */
+  color: #333; /* Dark gray color for text */
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  margin: 20px 0; /* Margin for spacing */
+  text-align: justify; /* Justify the text */
+}
+
+.lead {
+  font-size: 1.25rem;
+  /* Adjust font size */
+  line-height: 1.5;
+  /* Adjust line height */
+}
+
+h2 {
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: red;
+  margin: 8px auto 0;
+}
+
+h5 {
+  font-size: 1.5rem;
+  /* Service title size */
+  margin-bottom: 10px;
+  /* Space between title and description */
+}
+
+.mb-4 {
+  margin-bottom: 2rem !important;
+  /* Spacing between services */
+}
+
+/* Home.css */
+
+.service-icon {
+  font-size: 3rem;
+  /* Set icon size */
+  color:#0da0a5;
+  /* Change the icon color */
+  transition: color 0.3s;
+  /* Add transition for hover effect */
+}
+
+.service-icon:hover {
+  color: #0f6d70;
+  /* Change color on hover */
+}
+
+.service-box {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  height: 100%;
+  /* Ensure boxes are consistent */
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  /* Lift effect on hover */
+}
+
+/* To make all boxes the same size */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row .col-md-4 {
+  display: flex;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Add background color to the section */
+.container.services-section {
+  background-color: #f8f9fa;
+  /* Light grey background */
+  padding: 40px 0;
+  /* Add padding to the section */
+}
+
+/* Add spacing between the boxes */
+.row .col-md-4 {
+  margin-bottom: 30px;
+  /* Spacing between boxes */
+}
+
+
+/* Offer Section Styles */
+.offer-section {
+  background-color: #f0f4f7;
+  padding: 50px;
+}
+
+.offer-section h2 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.offer-section p {
+  font-family: 'Poppins', sans-serif; /* or any font of your choice */
+  font-size: 18px; /* Adjust the font size as needed */
+  line-height: 1.6; /* Better readability */
+  color: #333; /* Dark text for contrast */
+  margin: 5px 10px; /* Space outside the box */
+  margin-bottom: 10px;
+  border-radius: 8px; /* Soft corners */
+  text-align: justify; /* Justify the text */
+}
+
+/* Offer Box Styles */
+.offer-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.offer-box:hover {
+  transform: translateY(-5px);
+}
+
+.offer-box ul {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 20px;
+  /* Left padding for custom bullets */
+}
+
+.offer-box ul li {
+  margin-bottom: 10px;
+}
+
+/* Ensure all images have the same size */
+.offer-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .offer-box img {
+    max-height: 120px;
+  }
+}
+
+.image-section {
+  position: relative;
+  /* Position relative to enable absolute positioning of overlay */
+  background: url('/public/images/background.jpeg');
+  /* Set your background image */
+  background-size: cover;
+  /* Cover the entire section */
+  background-position: center;
+  /* Center the background image */
+  padding: 30px 0;
+  /* Reduced padding for a smaller height */
+  color: white;
+  /* Change text color to white for better contrast */
+}
+
+/* Overlay for transparency */
+.image-section::before {
+  content: "";
+  /* Required for pseudo-element */
+  position: absolute;
+  /* Position overlay absolutely */
+  top: 0;
+  /* Start from top */
+  left: 0;
+  /* Start from left */
+  right: 0;
+  /* Cover full width */
+  bottom: 0;
+  /* Cover full height */
+  background: rgba(0, 0, 0, 0.6);
+  /* Black overlay with 50% transparency */
+  z-index: 1;
+}
+
+h2 {
+  position: relative;
+  /* Ensure heading appears above overlay */
+  z-index: 2;
+  /* Higher z-index to appear above the overlay */
+}
+
+.achievement {
+  margin-bottom: 30px;
+  /* Space between columns */
+  position: relative;
+  /* Ensure each achievement appears above overlay */
+  z-index: 2;
+  /* Higher z-index to appear above the overlay */
+}
+
+.achievement-icon {
+  font-size: 3rem;
+  /* Size of the icons */
+  color: #ffcc00;
+  /* Gold color for icons */
+  margin-bottom: 10px;
+  /* Space between icon and text */
+}
+
+.achievement-info {
+  margin-top: 10px;
+  /* Space between video and text */
+}
+
+.achievement-info h3 {
+  font-size: 2rem;
+  /* Larger font size for numbers */
+  font-weight: bold;
+  /* Bold font */
+}
+
+.achievement-info p {
+  font-size: 1rem;
+  /* Smaller font size for labels */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .achievement-info h3 {
+    font-size: 1.5rem;
+    /* Adjust size for smaller screens */
+  }
+
+  .achievement-info p {
+    font-size: 0.875rem;
+    /* Adjust label size */
+  }
+
+  .achievement-icon {
+    font-size: 2.5rem;
+    /* Adjust icon size for smaller screens */
+  }
+}
+
+.partner-logo img {
+  max-height: 100px;
+  /* Adjust as necessary */
+  margin: 0 auto;
+  /* Center logos */
+}
+
+.video-section {
+  position: relative;
+  margin-top: 40px;
+  
+}
+
+.background-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.video-overlay {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: auto;
+  display: inline-block;
+}
+
+/*Responsive adjustments */
+@media (max-width: 768px) {
+ .service-box{
+  margin: 10px;
+ }
+}
+
+@media (max-width: 480px) {
+  .background-video {
+    height: 100vh;
+    /* Maintain full-screen video height */
+    object-fit: cover;
+  }
+
+  .video-overlay {
+    padding: 10px;
+    font-size: 12px;
+    /* Further reduce text size for smaller screens */
+  }
+}
+
+.get-in-touch-section {
+  padding: 40px;
+  background-color: #f8f9fa;
+  /* Light background for contrast */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+}
+
+.get-in-touch-section h2 {
+  font-size: 2rem;
+  /* Adjust heading size */
+  margin-bottom: 20px;
+  /* Space below heading */
+}
+
+.get-in-touch-section .form-control {
+  border-radius: 5px;
+  /* Rounded corners */
+}
+
+.get-in-touch-section .btn {
+  width: 100%;
+  /* Full width button */
+}
+
+.social-icons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+  /* display: flex; */
+  flex-direction: column;
+}
+
+.social-icons a {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  background-color: #0da0a5;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #03ddc0;
+}
+.btn{
+  background-color: #0da0a5;
+  color:#f8f9fa;
+  font-size: 20px;
+}
+.btn:hover{
+  background-color: #03ddc0;
+}
+
+.social-icons a i {
+  font-size: 16px;
+}
+
+.fixed-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.fixed-icons .whatsapp-icon {
+  display: block;
+  background-color: #25d366;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.fixed-icons .whatsapp-icon:hover {
+  background-color: #128c7e;
+}
+
+.scroll-to-top {
+  background-color: #0da0a5;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  line-height: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top:hover {
+  background-color: #0da0a5;
+}

@@ -1,0 +1,342 @@
+/* Overall Header Container */
+.header-box {
+    width: 100%;
+    background-color: rgba(221, 233, 245, 0.9);
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    padding: 5px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    animation: slideIn 1s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* First Row Styling */
+.header-row {
+    padding: 5px 0;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+/* Logo Hover Animation */
+.logo:hover {
+    transform: scale(1.1);
+    color: #0da0a5;
+}
+
+/* Navigation Styling */
+.nav {
+    gap: 20px;
+    font-size: 16px;
+}
+
+/* Navigation Item Styling */
+.nav-item {
+    padding: 0 10px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #0da0a5;
+    transform: translateY(-3px);
+}
+
+/* Active Navigation Item */
+.active-link {
+    color: #0da0a5 !important;
+    font-weight: bold;
+    position: relative;
+}
+
+@keyframes underline {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Country Selector */
+.country-selector {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.country-selector:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-3px);
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 150px;
+    z-index: 100;
+    margin-top: 0px;
+}
+
+.dropdown div {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.dropdown div:hover {
+    background-color: #f1f1f1;
+}
+
+/* Search Box Design */
+.search-box {
+    position: relative;
+    padding: 5px 40px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.search-box::before {
+    content: "🔍";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+}
+
+/* Second Row Styling */
+.sub-nav-row {
+    padding: 10px 0;
+    background-color: rgba(240, 243, 246, 0.9);
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.services-subnav {
+    display: flex;
+    width: 80vw;
+    border: 1px solid #ddd;
+}
+
+.main-options {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.sub-options {
+    flex: 1;
+    padding: 10px;
+}
+
+.sub-nav-item {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.sub-nav-item:hover {
+    background-color: #f0f0f0;
+}
+
+.sub-options .no-sub-options {
+    padding: 10px;
+    color: #888;
+}
+
+.active-link {
+    font-weight: bold;
+    color: #000;
+}
+/* Full Width Submenu Styling */
+.submenu {
+    display: none; /* Hidden initially */
+    position:relative; /* Change to fixed to cover the viewport */
+    top: 100%; /* Position it right below the parent */
+    left: 0; /* Align it to the left edge */
+    width: 100%; /* Full width of the viewport */
+    background-color: white; /* Set a background color */
+    border: 1px solid #ccc; /* Adds a border for definition */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    z-index: 10; /* Ensure it appears above other elements */
+    min-height: 150px; /* Minimum height for consistency */
+}
+
+/* Show submenu on parent hover */
+.submenu-container:hover .submenu {
+    display: block; /* Shows submenu on hover */
+    opacity: 1; /* Ensure it's visible */
+    visibility: visible; /* Ensure it's visible */
+}
+
+/* Keep submenu open on hover */
+.submenu:hover {
+    display: block; /* Keep submenu displayed when hovered */
+    opacity: 1; /* Ensure it's visible */
+    visibility: visible; /* Ensure visibility */
+}
+
+/* Optional: Additional styles for better visual separation */
+.submenu-item:last-child {
+    border-bottom: none; /* Removes the border for the last item */
+}
+
+/* Optional: Add a transition effect */
+.submenu {
+    opacity: 0; /* Hidden by default */
+    visibility: hidden; /* Hidden by default */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+.submenu-container:hover .submenu {
+    display: block; /* Show submenu */
+    opacity: 1; /* Fade-in effect */
+    visibility: visible; /* Ensure visibility */
+}
+
+/* Adjusted services dropdown styling */
+.services-dropdown {
+    position: relative; /* Allow absolute positioning of the subnav */
+}
+
+.services-subnav {
+    position: fixed; /* Fixed positioning relative to the viewport */
+    top: 100%; /* Position it right below the parent */
+    left: 0; /* Align it to the left edge */
+    width: 30vw; /* Full width of the viewport */
+    background-color: white; /* Set a background color */
+    border: 1px solid #ccc; /* Adds a border for definition */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    z-index: 10; /* Ensure it appears above other elements */
+    min-height: 200px; /* Minimum height for consistency */
+    margin-left: -70px;
+    margin-top: 10px;
+}
+
+/* Optional: Ensure body has no margin */
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    .responsive-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        padding: 20px;
+        overflow-y: auto;
+    }
+    
+    .search-box {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .nav-item {
+        display: block;
+        padding: 7px 15px;
+        color: #333;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    
+    .nav-item:hover,
+    .active-link {
+        background-color: #f0f0f0; 
+        color: #0da0a5 ;
+    }
+    
+    .submenu-container {
+        margin-top: -2px;
+    }
+    
+    .submenu {
+        padding: 20px; /* Indentation for submenu */
+        min-height: 100px;
+    }
+    
+    .submenu-item {
+        padding: 8px 15px;
+        display: block;
+        color: #555;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    
+    .submenu-item:hover {
+        background-color: #e0e0e0; /* Light background for submenu item on hover */
+    }
+    
+}
+
+/* Header.css */
+.nav-link {
+    color: #000;
+    /* Default link color */
+}
+
+.nav-link:hover {
+    color: #007bff;
+    /* Hover color for links */
+}
+
+.active-link {
+    color: #0da0a5 !important;
+    /* Highlight color for the active page */
+    font-weight: bold;
+    /* Make it bold to emphasize */
+}

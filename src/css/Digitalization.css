@@ -1,0 +1,131 @@
+/* src/css/Digitalization.css */
+.digitalization-hero-section {
+    background-image: url('/public/images/digitalization/digitalization_background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 3rem; /* Larger font size for bigger devices */
+    font-weight: bold;
+    padding: 0 20px; /* Add some padding */
+}
+
+.digitalization-main-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-heading {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.5rem;
+    line-height: 1.5; 
+    font-weight: 400;
+    letter-spacing: 0.5px; 
+    color: #333;
+    text-align: center; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.content-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.content-block p {
+    text-align: justify; /* Justify text in paragraphs */
+    margin-bottom: 20px; /* Add space below paragraphs */
+}
+
+.content-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.solution-button {
+    background-color:#0da0a5; /* Bootstrap primary color */
+    color: white; /* Text color */
+    padding: 5px 20px; /* Padding for the button */
+    border: 5px; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 20px; /* Space above button */
+    border-radius: 20px; /* Rounded corners */
+    display: inline-flex; /* Align items */
+    align-items: center; /* Center content */
+    transition: background-color 0.3s ease; 
+}
+
+.solution-button:hover {
+    background-color: #44adb1 /* Darker shade on hover */
+}
+
+.arrow-icon {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .digitalization-hero-section {
+        height: 150px; /* Adjust height for tablets */
+        background-size: contain; /* Ensure the whole image is visible */
+    }
+    .hero-title {
+        font-size: 2.5rem; /* Smaller font size for tablets */
+    }
+    .content-block {
+        flex-direction: column;
+    }
+
+    .content-block.reverse {
+        flex-direction: column;
+    }
+
+    .content-text, .content-image {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 576px) {
+    .digitalization-hero-section {
+        height: 100px;
+        background-size: contain;
+    }
+    .hero-title {
+      font-size: 1.5rem; 
+    }
+    .main-heading {
+        font-size: 1.2rem; 
+        text-align: center;
+    }
+}

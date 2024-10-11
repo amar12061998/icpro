@@ -1,0 +1,42 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  text-align: left; /* Align text to the left */
+}
+
+.footer h5 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  margin: 0 0 5px;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.flag-icon {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.footer-icon {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+@media (max-width: 768px) {
+  .footer .row {
+    text-align: center; /* Center text on smaller screens */
+  }
+}
