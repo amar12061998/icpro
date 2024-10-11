@@ -156,7 +156,8 @@ const Manufacturing = () => {
     <div className="row">
       {/* Shared Image on the Left */}
       <div className="col-md-6">
-        <img src="images/manufacturing/control.jpg" alt="Offer Image" className="offer-image" />
+        <img src="images/manufacturing/control.jpg" alt="Control panel for manufacturing equipment"
+           className="offer-image" />
       </div>
 
       {/* Offers on the Right */}
